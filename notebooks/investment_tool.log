@@ -1,0 +1,47 @@
+2024-10-11 18:49:38,696 - INFO - StockAPIClient initialized with API key ending in 4QSA
+2024-10-11 18:49:38,697 - INFO - InvestmentStrategyGenerator initialized with OpenAI API key.
+2024-10-11 18:49:38,713 - INFO - Requesting stock data for AAPL from 2023-01-01 to 2023-12-31
+2024-10-11 18:49:39,698 - INFO - Data retrieved successfully for AAPL
+2024-10-11 18:49:39,711 - INFO - Filtered 250 data points for AAPL
+2024-10-11 18:49:39,713 - INFO - Function 'get_stock_data' executed in 0.9993 seconds
+2024-10-11 18:49:39,940 - INFO - Generating investment strategy using GPT-4.
+2024-10-11 18:49:39,941 - ERROR - An error occurred in the InvestmentTool: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-10-11 18:49:39,941 - INFO - Function 'run' executed in 1.2278 seconds
+2024-10-11 18:53:58,915 - INFO - API Key found: ************4QSA
+2024-10-11 18:53:58,928 - INFO - InvestmentStrategyGenerator initialized
+2024-10-11 18:53:58,937 - INFO - StockDataVisualizer initialized
+2024-10-11 18:53:58,938 - INFO - InvestmentTool initialized
+2024-10-11 18:53:58,938 - INFO - Requesting data for AAPL from 2023-01-01 to 2023-12-31
+2024-10-11 18:53:58,939 - INFO - API URL: https://www.alphavantage.co/query
+2024-10-11 18:53:58,939 - INFO - Params (excluding API key): {'function': 'TIME_SERIES_DAILY', 'symbol': 'AAPL', 'apikey': 'RP5ZYUI51G8Z4QSA', 'outputsize': 'full', 'datatype': 'json'}
+2024-10-11 18:53:59,846 - INFO - Response status code: 200
+2024-10-11 18:53:59,859 - INFO - Filtered data points: 250
+2024-10-11 18:53:59,861 - INFO - Function 'get_stock_data' executed in 0.9226 seconds
+2024-10-11 18:54:00,096 - INFO - Stock data visualization completed
+2024-10-11 18:54:00,096 - INFO - Function 'visualize' executed in 0.2346 seconds
+2024-10-11 18:54:12,038 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-11 18:54:12,042 - INFO - Strategy generated successfully
+2024-10-11 18:54:12,043 - INFO - Function 'generate_strategy' executed in 11.9462 seconds
+2024-10-11 18:54:12,043 - INFO - Generated Investment Strategy:
+2024-10-11 18:54:12,043 - INFO - Based on the provided data, we can see that there is a general upward trend in the stock's price over the time period. However, there are also noticeable fluctuations in the stock's price, which could present opportunities for both long-term investing and short-term trading.
+
+For long-term investors:
+
+Considering the overall upward trend, a viable strategy could be to invest in the stock and hold it for the long term. This approach would benefit from the general increase in the stock's value over time. 
+
+For short-term traders:
+
+The fluctuations in the stock's price could provide opportunities for short-term trading strategies like swing trading or day trading. For example, a trader could buy the stock when the price dips and sell when the price rises to make a profit. 
+
+It's important to note that stock market investing involves risk, and past performance is not indicative of future results. It's advisable to further research the company's fundamentals, the overall market conditions, and consult with a financial advisor before making investment decisions.
+2024-10-11 18:54:12,066 - INFO - Plot saved as AAPL_stock_chart.png
+2024-10-11 18:54:12,067 - INFO - Function 'run' executed in 13.1288 seconds
